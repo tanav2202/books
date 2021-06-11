@@ -5,69 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="tanav">
-    <title>Books Site</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <script defer src="./main.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="brand">
-                <h1>My Books</h1>
+
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+    <!-- The Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                    <h1 class="book-title">My Library</h1>
+                    <img class="cover-img" src="./img/book2.jpg" alt="books">
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="collection.html">Library</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-
-    <section class="showcase">
-        <div class="container">
-
-            <h1>Sneak Peek at My Favourite Books and Authors</h1>
-            <p>Welcome Bookworms </p>
-
-        </div>
-    </section>
-
-    <section id="qoutes">
-        <div class="container">
-            <h1>A Reader Lives a Thousand Lives Before he Dies</h1>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <h2>JK Rowling</h2>
+                    <div class="content">
+                        <img class="cover-img" src="./img/jk.jpg" alt="books">
 
 
-        </div>
-    </section>
-    <section id="boxes">
-        <div class="container">
-            <div class="left-box">
-                <img src="img/rick.jpg">
-                <h3>Rick Riordan</h3>
-                <p>One of my fav mythological fiction author</p>
-            </div>
-            <div class="middle-box">
-                <img src="./img/JKRowling.jpg">
-                <h3>JK Rowling</h3>
-                <p>I mean who has not read Harry Potter</p>
-            </div>
-            <div class="right-box">
-                <img src="./img/dan.jpg">
-                <h3>Dan Brown</h3>
-                <p>Mystry Thriller History Symobolism his books have em all</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h1>Harry Potter Series</h1>
+                    <div class="content">
+                        <img class="cover-img" src="./img/harrypotter.webp" alt="books">
+                    </div>
+                </div>
 
-    </section>
-    <footer>
-        <h3>
-            Made By:Tanav Singh Bajaj
-        </h3>
-    </footer>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h1>Dan Brown</h1>
+                    <div class="content">
+                        <img class="cover-img" src="./img/dan.jpg" alt="books">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <h1>Collection I have read </h1>
+                    <div class="content">
+                        <p>
+                            <li>da vinci code</li>
+                            <li>angels and demons</li>
+                            <li> inferno </li>
+                            <li> origin </li>
+                            <li> digital fotress</li>
+                            <li>lost symbol </li>
+                            <li> deception point </li>
+
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <h1>The End</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
 
 
 </body>
